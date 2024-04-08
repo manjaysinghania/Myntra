@@ -13,7 +13,7 @@ function Home(){
   async function fetchdata(){
     setloading(true)
     try{  
-      const output=await fetch("http://localhost:8080/items")
+      const output=await fetch("https://myntra-1.vercel.app/items")
       const data=await output.json()
       
        setposts(data.items[0])
